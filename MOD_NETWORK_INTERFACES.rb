@@ -1,8 +1,7 @@
 #!/usr/bin/ruby
 
 # by Mike Limberger
-# Make modifcations of /usr/network/interfaces a bit easy
-# Intended use: sudo ruby -e $(curl -sSL [url to this file]) -0 > /usr/network/interfaces
+# Make modifcations of /usr/network/interfaces a bit easy?
 
 class Mod_Interfaces
 
