@@ -4,22 +4,22 @@ Make modifcations of /usr/network/interfaces a bit easy
 
 Example use: 
 
-*download*
+*# download*
 
-curl -L -o MNI.rb http://bit.ly/2snhYAx
+**curl -L -o MNI.rb http://bit.ly/2snhYAx**
 
-*make executable*
+*# make executable*
 
-chmod u+x MNI.rb
+**chmod u+x MNI.rb**
 
-*To list all options*
+*# To list all options*
 
-./MNI.rb
+**./MNI.rb**
 
-*example select an option*
+*# example select an option*
 
-./MSNI.rb -0
+**./MSNI.rb -0**
 
-*example: to write to /etc/network/interfaces*
+*# example: to write to /etc/network/interfaces*
 
-sudo ./MSNI.rb -0 > /etc/network/interfaces
+**sudo ./MSNI.rb -0 > /etc/network/interfaces**
