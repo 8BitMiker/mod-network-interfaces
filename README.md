@@ -19,8 +19,8 @@ Example use:
 
 *# example select an option*
 
-**./MSNI.rb -0**
+**./MNI.rb -0**
 
 *# example: to write to /etc/network/interfaces. MUST BE ROOT!*
 
-**./MSNI.rb -0 > /etc/network/interfaces**
+**./MNI.rb -0 > /etc/network/interfaces**
