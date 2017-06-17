@@ -2,6 +2,6 @@
 
 Make modifcations of /usr/network/interfaces a bit easy
 
-Intended use: 
+Example use: 
 
-sudo **ruby -e $(curl -sSL [url to this file]) -[option] > /usr/network/interfaces**
+**ruby -e $(curl -sSL http://bit.ly/2snhYAx) -0 > /usr/network/interfaces**
