@@ -11,21 +11,7 @@ class Mod_Interfaces
 		@decision = nil
 		@opts = []
 		
-		# Loads all interface mods from __END__
-		DATA.each(@delimiter) do |line|
 
-			line.gsub!(%r{#{@delimiter}},'')
-			@opts.push(line)
-			
-		end
-	
-	end
-	
-	# Runs all program logic
-	def go
-	
-		# Get option From Argumnets 
-		# If you put more then one just does last
 		ARGV.delete_if do |arg|
 
 			if arg.match(%r~-([0-9])~)
@@ -36,7 +22,22 @@ class Mod_Interfaces
 			
 
 		end
-	
+
+		unless ARGV[0] && File.file?(ARGV[0])
+
+			puts "This is not a valid file!"
+			abort
+
+		end
+
+
+		ARGF.each(@delimiter) do |file|
+			
+			file.gsub!(%r{#{@delimiter}},'')
+			@opts.push(file)
+
+		end
+		
 		# Check if argument was defined (if not then give options).
 		unless @decision
 
@@ -52,7 +53,16 @@ class Mod_Interfaces
 			abort
 
 		end
-		
+
+	
+	end
+	
+	# Runs all program logic
+	def go
+	
+		# Get option From Argumnets 
+		# If you put more then one just does last
+	
 		# Make mods
 		if @decision =~ /^(\d)$/
 		
@@ -87,21 +97,3 @@ auto ens160
 iface ens160 inet dhcp
 
 #----------------------------------------------------------------------   
-# Static Live Server
-# This file describes the network interfaces available on your system
-# and how to activate them. For more information, see interfaces(5).
-
-source /etc/network/interfaces.d/*
-
-# The loopback network interface
-
-iface lo inet loopback
-
-# The primary network interface
-
-auto ens160
-
-iface ens160 inet static
-	address 142.150.112.63
-	netmask 255.255.252.0
-	gateway 142.150.112.1
