@@ -46,7 +46,9 @@ class Mod_Interfaces
 			@opts.each_index do |k| 
 				
 				@opts[k] =~ /^(\#[^\n]+)\n/; 
-				printf %Q{-%01d %s\n}, k, $1
+				printf %Q{-%01d %s}, k, $1
+				@opts[k] =~ /(?i)address\ ([\.\d]+)/
+				puts " #{ $1 }"
 			
 			end
 			
