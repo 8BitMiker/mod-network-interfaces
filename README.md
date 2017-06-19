@@ -26,7 +26,7 @@ EXAMPLE USE:
 
 **./MNI.rb -0 config.txt > /etc/network/interfaces**
 
-CONFIG EXAMPLE: (Long Delimeter is necessary #--)
+CONFIG EXAMPLE: (Long Dilimeter is necessary #--)
 
 ```
 # General DHCP
