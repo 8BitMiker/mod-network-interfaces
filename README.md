@@ -4,7 +4,7 @@ Make modifcations of /usr/network/interfaces a bit easy
 
 **WARNING:** This is dangerous if you don't know what you are doing!
 
-Example use: 
+EXAMPLE USE: 
 
 *# download*
 
