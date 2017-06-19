@@ -16,12 +16,12 @@ EXAMPLE USE:
 
 *# To list all options*
 
-**./MNI.rb**
+**./MNI.rb config.txt**
 
 *# example select an option*
 
-**./MNI.rb -0**
+**./MNI.rb -0 config.txt**
 
 *# example: to write to /etc/network/interfaces. MUST BE ROOT!*
 
-**./MNI.rb -0 > /etc/network/interfaces**
+**./MNI.rb -0 config.txt > /etc/network/interfaces**
