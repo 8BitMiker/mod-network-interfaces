@@ -1,7 +1,8 @@
 # mod-network-interfaces
 
 Make modifcations of /usr/network/interfaces a bit easy
-WARNING: This is dangerous if you don't know what you are doing!
+
+**WARNING:** This is dangerous if you don't know what you are doing!
 
 Example use: 
 
